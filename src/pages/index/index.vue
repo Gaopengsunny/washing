@@ -1,49 +1,51 @@
 <template>
-	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view>
-			<text class="title">{{title}}</text>
-		</view>
-	</view>
+  <view class="page">
+    <image class="logo" src="@/static/images/logo.png"></image>
+    <view>
+      <text class="title">{{ title }}</text>
+    </view>
+  </view>
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				title: 'Hello'
-			}
-		},
-		onLoad() {
+import { home } from '@/api'
 
-		},
-		methods: {
-
-		}
-	}
+export default {
+  data() {
+    return {
+      title: 'Hello'
+    }
+  },
+  onLoad() {
+    this.getData()
+  },
+  methods: {
+    async getData() {
+      const data = await home()
+      if (!data) return
+      console.log(data)
+    }
+  }
+}
 </script>
 
-<style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
+<style lang="scss" scoped>
+.page {
+  @include flex(flex-start, $fd: column);
+}
+.logo {
+  height: 200rpx;
+  width: 200rpx;
+  margin: 200rpx auto 50rpx auto;
+}
 
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin: 200rpx auto 50rpx auto;
-	}
+.text-area {
+  display: flex;
+  justify-content: center;
+}
 
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
+.title {
+  font-size: 36rpx;
+  color: #8f8f94;
+}
 </style>

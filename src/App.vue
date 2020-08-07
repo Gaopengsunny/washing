@@ -1,17 +1,27 @@
 <script>
-	export default {
-		onLaunch: function() {
-			console.log('App Launch')
-		},
-		onShow: function() {
-			console.log('App Show')
-		},
-		onHide: function() {
-			console.log('App Hide')
-		}
-	}
+import { uniProxy } from '@/utils'
+import { mapMutations, mapState } from 'vuex'
+
+export default {
+  onLaunch() {
+    this.getSystemInfo()
+  },
+  computed: {
+    ...mapState('publicData', ['isFullSucreen'])
+  },
+  methods: {
+    ...mapMutations('publicData', ['setFullSucreen']),
+    // 获取系统信息 iPhone X 底部横条适配
+    async getSystemInfo() {
+      const data = await uniProxy.getSystemInfo()
+      if (data.screenHeight - data.windowHeight - data.statusBarHeight - 32 > 72) this.setFullSucreen(true)
+    }
+  }
+}
 </script>
 
-<style>
-	/*每个页面公共css */
+<style lang="scss">
+page {
+  height: 100%;
+}
 </style>

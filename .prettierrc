@@ -1,0 +1,8 @@
+{
+  "printWidth": 800,
+  "eslintIntegration": true,
+  "semi": false,
+  "singleQuote": true,
+  "bracketSpacing": true,
+  "arrowParens": "avoid"
+}

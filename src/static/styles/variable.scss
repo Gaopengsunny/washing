@@ -1,0 +1,10 @@
+$mainColor: #051878;
+$secondaryColor: #fecc2f;
+$subSecondaryColor: #ff3636;
+
+@mixin flex($jc: center, $ai: center, $fd: initial) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  flex-direction: $fd;
+}
