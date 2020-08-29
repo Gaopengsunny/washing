@@ -1,16 +1,240 @@
 {
-	"pages": [
-		{
+	"pages": [{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "取衣",
+				"enablePullDownRefresh": true
+			}
+		},{
+			"path": "pages/card/index",
+			"style": {
+				"navigationBarTitleText": "办卡",
+				"navigationStyle": "custom"
+			}
+		},{
+			"path": "pages/selCustomer/index",
+			"style": {
+				"navigationBarTitleText": "办卡"
+			}
+		},
+		
+		
+		{
+			"path": "pages/give/index",
+			"style": {
+				"navigationBarTitleText": "送衣",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/acquirers/index",
+			"style": {
+				"navigationBarTitleText": "收单"
+			}
+		},
+
+		{
+			"path": "pages/mine/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/order/index",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/customerChose/index",
+			"style": {
+				"navigationBarTitleText": "收单"
+			}
+		},
+		{
+			"path": "pages/myTakeClothes/index",
+			"style": {
+				"navigationBarTitleText": "我的取衣"
+			}
+		},
+		{
+			"path": "pages/myGive/index",
+			"style": {
+				"navigationBarTitleText": "我的送衣"
+			}
+		},
+		{
+			"path": "pages/myReceipt/index",
+			"style": {
+				"navigationBarTitleText": "我的取单"
+			}
+		},
+		{
+			"path": "pages/cardRecord/index",
+			"style": {
+				"navigationBarTitleText": "办卡记录"
+			}
+		}, {
+			"path": "pages/information/index",
+			"style": {
+				"navigationBarTitleText": "基本信息"
+			}
+		}, {
+			"path": "pages/editPhone/index",
+			"style": {
+				"navigationBarTitleText": "修改手机号"
+			}
+		}, {
+			"path": "pages/myWithdrawal/index",
+			"style": {
+				"navigationBarTitleText": "提现历史"
+			}
+
+		}, {
+			"path": "pages/withdrawal/index",
+			"style": {
+				"navigationBarTitleText": "提现"
+			}
+
+		}, {
+			"path": "pages/bankCard/index",
+			"style": {
+				"navigationBarTitleText": "提现银行卡"
+			}
+		}, {
+			"path": "pages/addBankCard/index",
+			"style": {
+				"navigationBarTitleText": "添加新卡"
+			}
+		}, {
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/myIncome/index",
+			"style": {
+				"navigationBarTitleText": "我的收入",
+				"navigationBarBackgroundColor": "#FF601A"
+			}
+		},
+		{
+			"path": "pages/acqChooseAddress/index",
+			"style": {
+				"navigationBarTitleText": "收单"
+			}
+		},
+		{
+			"path": "pages/acqdistribution/index",
+			"style": {
+				"navigationBarTitleText": "收单"
+			}
+		},
+		{
+			"path": "pages/acqAddAddress/index",
+			"style": {
+				"navigationBarTitleText": "新增地址"
+			}
+		},
+		{
+			"path": "pages/acqChooseGoods/index",
+			"style": {
+				"navigationBarTitleText": "收单"
+			}
+		},
+		{
+			"path": "pages/acqAddUser/index",
+			"style": {
+				"navigationBarTitleText": "增加新顾客"
+			}
+		},
+		{
+			"path": "pages/settlement/index",
+			"style": {
+				"navigationBarTitleText": "结算"
+				
+				
+			}
+		},
+		{
+			"path": "pages/settlementCard/index",
+			"style": {
+				"navigationBarTitleText": "结算"
+				
+				
+			}
+		},
+		{
+			"path": "pages/collection/index",
+			"style": {
+				"navigationBarTitleText": "微信收款"
+			}
+		},
+		{
+			"path": "pages/selAcquirers/index",
+			"style": {
+				"navigationBarTitleText": "选择顾客"
+			}
+		},
+		{
+			"path": "pages/paySuccess/index",
+			"style": {
+				"navigationBarTitleText": "微信收款"
 			}
 		}
+		
 	],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarTitleText": "众包助手",
+		"backgroundColor": "#F5F5F5",
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#377be8"
+	},
+	"tabBar": {
+		"color": "#2c2c2c",
+		"selectedColor": "#377BE8",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/images/tabbar/take-clothes.png",
+				"selectedIconPath": "static/images/tabbar/take-clothes-sle.png",
+				"text": "取衣"
+			},
+			{
+				"pagePath": "pages/give/index",
+				"iconPath": "static/images/tabbar/send-clothes.png",
+				"selectedIconPath": "static/images/tabbar/send-clothes-sle.png",
+				"text": "送衣"
+			},
+			{
+				"pagePath": "pages/acquirers/index",
+				"iconPath": "static/images/tabbar/take-orders.png",
+				"selectedIconPath": "static/images/tabbar/take-orders-sle.png",
+				"text": "收单"
+			},
+			{
+				"pagePath": "pages/card/index",
+				"iconPath": "static/images/tabbar/get-card.png",
+				"selectedIconPath": "static/images/tabbar/get-card-sle.png",
+				"text": "办卡"
+			},
+			{
+				"pagePath": "pages/mine/index",
+				"iconPath": "static/images/tabbar/profile.png",
+				"selectedIconPath": "static/images/tabbar/profile-sle.png",
+				"text": "我的"
+			}
+		]
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "pages/mine/index", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
 	}
 }
